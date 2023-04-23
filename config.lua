@@ -10,32 +10,6 @@ Config.Props = {
 	"prop_snow_dumpster_01"
 }
 
-
--- reset looted dumpsters on restart resource
-Config.ResetOnReboot = false
-Config.ResetTime = 1 -- If Config.ResetOnReboot = false. In minutes
-
--- mingame
-Config.Minigame = 'ps-ui' -- can be false, 'qb-lock', 'memorygame', 'ps-ui'
-
--- time
-Config.ProgressTime = 3 -- In seconds
-
--- police
-Config.Illegal = false -- activate alerts
-Config.AlertChance = 10
-Config.Dispatch = 'ps-dispatch' -- ps-dispatch or qb-core
-
--- injury configs
-Config.Hurting = true
-Config.HurtChance = 25
-Config.CanBleed = true
-Config.BleedChance = 30
-Config.HurtDamage = {
-	min = 5,
-	max = 15,
-}
-
 -- items
 Config.CanLootMultiple = true
 Config.MaxLootItem = 3
@@ -50,4 +24,29 @@ Config.Loottable = {
 	[8] = {item = 'oxy',        	    chances = 4,    min = 1,    max = 3},
 	[9] = {item = 'firework2',          chances = 64,   min = 1,    max = 3},
 	[10] = {item = 'stickynote',        chances = 95,   min = 1,    max = 3},
+}
+
+-- reset looted dumpsters on restart resource
+Config.ResetOnReboot = false
+Config.ResetTime = 1 -- if above = false - this is the time in minutes until you can search the same dumpster again
+
+-- mingame
+Config.Minigame = 'ps-ui' -- can be false, 'qb-lock', 'memorygame', 'ps-ui'
+
+-- time
+Config.ProgressTime = 3 -- In seconds
+
+-- police
+Config.Illegal = false -- activate alerts
+Config.Dispatch = 'ps-dispatch' -- ps-dispatch or qb-core
+Config.AlertChance = 10
+
+-- injury configs
+Config.Hurting = true
+Config.HurtChance = 25
+Config.CanBleed = true
+Config.BleedChance = 30
+Config.HurtDamage = {
+	min = 5,
+	max = 15,
 }
