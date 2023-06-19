@@ -31,7 +31,7 @@ Config.ResetOnReboot = false
 Config.ResetTime = 1 -- if above = false - this is the time in minutes until you can search the same dumpster again
 
 -- mingame
-Config.Minigame = 'ps-ui' -- can be false, 'qb-lock', 'memorygame', 'ps-ui'
+Config.Minigame = 'ps-ui' -- can be false, 'qb-lock', 'memorygame', 'ps-ui', "ox_lib"
 
 -- time
 Config.ProgressTime = 3 -- In seconds

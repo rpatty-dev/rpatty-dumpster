@@ -30,6 +30,11 @@ if Config.Minigame == 'memorygame' then
 			end, 3, 10)
 			return success
 		end
+	elseif Config.Minigame == 'ox_lib' then
+	    function MiniGame()
+	        local success = exports['ox_lib']:skillCheck({"medium"}, {"1", "2", "3", "4"})
+	        return success or false
+	    end
 	elseif Config.Minigame and Config.Minigame ~= 'none' then
 		print('[rpatty-dumpster] Invalid minigame specified in config.lua')
 	end
